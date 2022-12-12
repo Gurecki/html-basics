@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- PRZYKŁADOWA NAWIGACJA: -->
+    <nav>
+        <ul>
+            <li><a></a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+
+<!-- EMMET 'div>h1+p+(ol.awesome-list>li.awesome-list__item*3)+button+a' : -->
     <div>
         <h1>HEADING 1</h1>
         <p>
@@ -20,9 +33,9 @@
         <button>MY BUTTON</button>
         <a href="">MY LINK</a>
     </div>
-    <nav>
 
-    </nav>
+
+    <!-- GŁOWNA ZAWARTOŚĆ/CONTENT STRONY: -->
     <main>
         <section>
 
@@ -34,9 +47,133 @@
 
         </section>
     </main>
-    <footer>
 
+
+
+<!-- FOOTER / STOPKA: -->
+    <footer>
+        <div>
+            <p>
+                Dostępna w:
+                <a href="link do apki"><img src="" alt=""></a>
+                <a href="link do apki2"><img src="" alt=""></a>
+            </p>
+        </div>
+        <div>
+            <div><img src="./logo" alt=""></div>
+            <div>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <button>
+                                <img src="" alt="">
+                            </button>
+                        </a>
+                    </li>
+                    <li><a href=""><button><img src="" alt=""></button></a></li>
+                    <li><a href=""><button><img src="" alt=""></button></a></li>
+                </ul>
+            </div>
+        </div>
+        <p>STOPKA</p>
     </footer>
+
+<!-- EMMET '.klasa' : -->
+<div class="klasa"></div>
+
+<!-- PRZYKŁADOWY HEADER STRONY Z CTA: -->
+<header>
+    <div>
+        <h1></h1>
+        <p></p>
+        <button></button>
+    </div>
+    <div><img src="" alt=""></div>
+</header>
+
+<!-- TABELKI: -->
+<table>
+    <thead>
+        <tr>
+            <th>CENA</th>
+            <th>NAZWA</th>
+            <th>ILOŚĆ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>19 zł/kg</td>
+            <td>Tuszka z kurczaka</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>19 zł/kg</td>
+            <td colspan="2">Ćwiartka kurczaka x 18</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<button type="submit">Wyslij</button>
+
+<!-- EMMET [atrybut=wartosc-atrybutu], np. 'input[type=password]': -->
+<input type="password">
+<!-- EMMET {TEXT w srodku}, np 'button{wyslij}': -->
+<button>wyslij</button>
+
+<!-- FORMULARZE: -->
+<form action="/test" method="post">
+    <section>
+        <h3>Dane kontaktowe</h3>
+        <div>
+            <input id="name" name="name" type="text" placeholder="Imię i nazwisko">
+            <label for="name">Podaj swoje imię i nazwisko</label>
+        </div>
+        <div>
+            <input id="email" name="email" type="email" placeholder="Podaj email" required>
+            <label for="email">Email</label>
+        </div>
+        <div>
+            <input id="tel" name="tel" type="tel" placeholder="Podaj telefon" pattern="[A-Z]+">
+            <label for="tel">Email</label>
+        </div>
+
+        <select name="category" id="category">
+            <option value="value1">One</option>
+            <option value="value2">Two</option>
+            <option value="value3">Three</option>
+            <option value="value4">Four</option>
+        </select>
+
+        <input type="date">
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="placehoder">WARTOŚĆ</textarea>
+
+
+        <button type="submit">Wyslij</button>
+    </section>
+</form>
 
 
 </body>
